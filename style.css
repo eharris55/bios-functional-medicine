@@ -77,13 +77,13 @@ padding: 10vh 5vw;
 /* ---- Typography ---- */
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(60,60,60);
   font-size: 1.2rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
   letter-spacing: -0.03em;
   margin: 0.3rem 0;
@@ -101,11 +101,32 @@ p {
   margin: 1.5rem 0;
 }
 /* ---- banner ---- */
-.banner{
-background-image: url('/images/leaf.jpg');
-min-height: 80vh;
+[class*=banner]{
+background-image: url('https://images.unsplash.com/photo-1493552152660-f915ab47ae9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+min-height: 95vh;
 background-size: cover;
 background-position: top;
+}
+
+.banner-home{
+  background-image: url('/images/bw-pic.jpg');
+  background-size: cover;
+  min-height:90vh;
+  background-position: bottom;
+}
+
+.header-nav{
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  color: white;
+  font-weight:600;
+  font-size: 1rem;
+}
+
+.banner-about .header-nav{
+  color:black;
+
 }
 
 .offers{

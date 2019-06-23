@@ -3,8 +3,18 @@
   padding:0;
   margin:0;
   box-sizing: border-box;
-  border: 1px solid rgb(240,240,240);
+  /* border: 1px solid rgb(240,240,240); */
 }
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+[class*=col] {
+padding: 0;
+}
+
 /* Utility Classes*/
 .tall         { min-height:100vh; }
 .med-height   { min-height: 50vh; }
@@ -31,14 +41,14 @@ img{
 .bg-white{ background-color:#fff;}
 .bg-feat{ background-color: yellow;}
 
-* {
+/* * {
   border: 1px solid grey;
-}
+} */
 
 /* Universal Styles */
 
 h2 {
-  color: blue;
+  color: teal;
 }
 
 /* ---- Button ---- */
@@ -55,29 +65,25 @@ h2 {
 /* ---- Layout ---- */
 
 /* ---- header and footer ---- */
-
-header, footer {
-padding: 5vh 5vw;
+footer {
+padding: 0vh 5vw;
 }
 
 section {
 padding: 10vh 5vw;
 }
 
-[class*=col] {
-padding: 2%;
-}
 
 /* ---- Typography ---- */
 
 body {
-  font-family: 'Work Sans', serif;
+  font-family: 'Quicksand', sans-serif;
   color: rgb(60,60,60);
   font-size: 1.2rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.2;
   letter-spacing: -0.03em;
   margin: 0.3rem 0;
@@ -96,9 +102,38 @@ p {
 }
 /* ---- banner ---- */
 .banner{
-background-image: url('https://images.unsplash.com/photo-1483393171123-e3057ccba837?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1647&q=80');
-min-height: 90vh;
+background-image: url('/images/leaf.jpg');
+min-height: 80vh;
 background-size: cover;
-background-position: center;
+background-position: top;
+}
+
+.offers{
+  min-height:5rem;
+}
+.quote-img{
+  background-image: url('https://images.unsplash.com/photo-1483393171123-e3057ccba837?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1647&q=80');
+  min-height: 20vh;
+  background-size: cover;
+  background-position: top;
+}
+.logo-grid{
+  padding-right: 1rem;
+
+}
+.logo{
+  max-width: 9rem;
+  margin-left: 3rem;
+}
+
+.nav{
+  font-size: .9rem;
+  font-weight:500;
+  padding: 2%;
+
+
+}
+nav a{
+  padding-left: .7rem;
 
 }

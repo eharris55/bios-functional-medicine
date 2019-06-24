@@ -110,7 +110,7 @@ background-size: cover;
 background-position: center;
 }
 
-.banner-Home .header-nav{
+.banner-Home {
   color:inherit;
   background-image: url('/images/leaf.jpg');
   background-size: cover;
@@ -180,4 +180,111 @@ nav a{
 }
 .icon-details{
    padding:0;
+}
+
+/* burger menu */
+
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 2px solid white;
+  background-color: #fff;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: green;
+  background-color:#383;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+.burger-menu hr{
+  border-bottom: 2px solid grey;
+  width: 20%;
+  margin: auto;
+}
+
+.burger-menu {
+    display: flex;
+    position: fixed;
+    top: -100vh;
+    left:60%;
+    right: 0;
+    /* bottom: auto; */
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+  transition:1s;
+    align-content:space-around;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.burger-menu.active{
+  top:0;
+  /* bottom:0; */
+}
+.burger-menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:30px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+/* medi */
+
+.tablet-show{
+  display:none;
+}
+
+@media(max-width:1024px){
+  .tablet-hide{
+    display:none;
+  }
+  .tablet-show{
+    display:block;
+  }
 }

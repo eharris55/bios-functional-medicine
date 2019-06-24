@@ -1,3 +1,41 @@
 ---
+title: Contact
 layout: default
+contact-icon:
+  - contact-name: Address
+    detail: 2001 Santa Monica Blvd. Suite 890-W Santa Monica, CA 90404
+  - contact-name: Phone
+    detail: 310-955-1885
+  - contact-name: Fax
+    detail: 310-317-7210
 ---
+<!-- this is the header -->
+
+<!-- this is the icon area -->
+<section class="grid inline-icons">
+  {% for item in page.contact-icon %}
+  <div class="col-3_sm-12">
+    <i class="fas fa-heart heart"></i>
+    <p class= icon-details>
+    <strong>
+      {{ item.contact-name}}
+    </strong>
+    </p>
+    <pclass= icon-details>
+      {{ item.detail }}
+    </p>
+  </div>
+  {% endfor %}
+</section>
+
+<!-- this is the email form -->
+<section>
+</section>
+
+<!-- this is the full map -->
+<section>
+</section>
+
+<!-- this is the newsletter -->
+<section>
+</section>

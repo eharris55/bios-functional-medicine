@@ -3,7 +3,7 @@ layout: post
 title: "We Should All Be Avoiding Gluten: Here's Why"
 author: Apostolos Lekkos
 date: 2018-08-07
-feat-img: https://images.unsplash.com/photo-1501113287220-55fa37ce44db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80
+feat-img: https://images.unsplash.com/photo-1549931319-a545dcf3bc73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80
 ---
 What is Gluten?
 Most people associate gluten with wheat, but gluten and wheat are not the same thing. Gluten is a protein composite (made up of more than one protein), found not only in wheat but also in other grains like rye, spelt, and barley, as well as the products made from these grains. These products include breads, rolls, crackers, baked goods, and pizza dough, where the gluten acts like a ‘glue’ to hold the flour together. It is also found in many personal care items such as cosmetics, shampoos, and lipsticks.

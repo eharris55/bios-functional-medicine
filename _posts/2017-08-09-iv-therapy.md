@@ -3,7 +3,7 @@ layout: post
 title: "What Is IV Therapy?"
 author: Apostolos Lekkos
 date: 2017-08-09
-feat-img: https://images.unsplash.com/photo-1561328165-f0b762a9508e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1644&q=80
+feat-img: https://images.unsplash.com/photo-1488188630656-ba26eafba904?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80
 ---
 For patients looking to treat a variety of common conditions without relying on pharmaceutical treatments that may cause damaging side effects, intravenous (IV) nutrient therapy may be the answer. IV therapy provides a powerful surge of nutrients not achievable with oral vitamins – in some cases providing 100 times more nutrients – and can be used to treat a wide variety of conditions, from hangovers to stress. Best of all, because your body needs nutrients to survive, there are no harmful side effects.
 

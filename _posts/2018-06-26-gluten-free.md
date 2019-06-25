@@ -3,7 +3,7 @@ layout: post
 title: "Stem Cell Therapy: Build Stronger Joints Without Surgery"
 author: Apostolos Lekkos
 date: 2018-05-31
-feat-img: https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1588&q=80
+feat-img: https://images.unsplash.com/photo-1482100199117-a4a38a64e7e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80
 ---
 About one in four adults in the US has chronic joint pain of some sort [1]. Joints wear down as you age, or if they’re under a lot of stress from injury or inactivity.
 

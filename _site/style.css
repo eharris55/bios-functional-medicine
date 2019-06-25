@@ -6,6 +6,8 @@
   /* border: 1px solid rgb(240,240,240); */
 }
 
+/* colors #595F79 purple  #E7F2F6 light purple  */
+
 a {
   text-decoration: none;
   color:inherit;
@@ -29,6 +31,7 @@ padding: 0;
 .padded-2   { padding: 2rem; }
 .no-padding { padding: 0;   }
 .padding-top-none{ padding-top: 0;}
+.form-padded { padding: 0 0.3rem; }
 
 img{
   max-width:60%;
@@ -40,7 +43,7 @@ img{
   color: white;
 }
 .bg-white{ background-color:#fff;}
-.bg-feat{ background-color: #E7F2F6;}
+.bg-feat{ background-color: #F9F9FA;}
 
 /* * {
   border: 1px solid grey;
@@ -56,11 +59,28 @@ h2 {
 .button {
   padding: 10px;
   margin:20px;
-  border: 2px solid black;
+  border: 2px solid #595F79;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color:#595F79;
+  border-radius: 5px;
 }
+
 .button:hover{
+  background-color:#595F79;
   color: white;
-  border: 2px solid pink;
+}
+.button-r {
+  padding:5%;
+  font-size: 1rem;
+  background-color:#595F79;
+  color: #fff;
+  border-radius:100%;
+}
+
+.button-r:hover{
+  background-color:#595F79;
+  color: white;
 }
 
 /* ---- Layout ---- */
@@ -87,8 +107,8 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
   letter-spacing: -0.03em;
-  margin: 0.3rem 0;
-  color: #666666;
+  margin-bottom: 1rem;
+  color: #1d264f;
 }
 
 h1 {  font-size: 2.5rem; }
@@ -144,7 +164,7 @@ background-position: center;
 }
 
 .banner-Blog{
-  background-image: url('https://images.unsplash.com/photo-1461773518188-b3e86f98242f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-image: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
 }
 
 .banner-About{
@@ -158,46 +178,25 @@ background-position: center;
   background-image: url('https://images.unsplash.com/photo-1454598430975-bfe9eb6d6a50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
 }
 /* ---------------- banners nav color --------------- */
-.banner-Index .header-nav{
-
-}
-.banner-About .header-nav{
-  color: #666666;
-}
-.banner-Testimonials .header-nav{
-  color:#666666;
-}
-
-.banner-Contact .header-nav{
-  color:#666666;
-}
-
-.banner-RegenerativeMedicine .header-nav{
-  color:#666666;
-}
 
 .header-nav{
   position: absolute;
   top: 3rem;
   right: 3rem;
-  color: white;
+  color: #1d264f;
   font-weight:600;
   font-size: .8rem;
   text-transform: uppercase;
   letter-spacing: .5px
 }
 
-.banner-about .header-nav{
-  color:black;
 
-}
-
-.quote-img{
+.quote-img {
   background-image: url('https://images.unsplash.com/photo-1515511856280-7b23f68d2996?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80');
-  background-color: #DBE7BF;
+  /* background-color: #DBE7BF; */
   min-height: 20vh;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
 .quote h2{
@@ -228,6 +227,7 @@ nav a{
   padding-left: 1.5rem;
 
 }
+
 .inline-icons i {
   font-size: 2rem;
 }
@@ -249,6 +249,7 @@ nav a{
 }
 .icon{
   font-size: 3rem;
+  color:#595F79;
 }
 
 /* burger menu */
@@ -349,6 +350,8 @@ nav a{
 input,
 textarea {
   width: 100%;
+  padding: 5%;
+  margin-bottom: 1rem;
 }
 
 form .button {
@@ -367,7 +370,7 @@ form .button {
 
 /*------------- Body------------ */
 .newsletter{
-  background-color:#F4F4F1;
+  background-color:#F9F9FA;
   margin: auto;
 }
 
@@ -379,7 +382,7 @@ form .button {
 }
 
 .footer{
-  background-color: #A1A499;
+  background-color: #595F79;
   padding-top: 2%;
   color:#F4F4F1;
 }
@@ -391,17 +394,7 @@ form .button {
   display:inline-block;
   max-width: 20%;
 }
-.offers a{
-  font-size: 1rem;
-  border-radius: 4px;
-  padding:.3rem;
-  display:inline-block;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  background-color:#fff;
-  color:#818181;
-}
+
 .offers h4{
   font-weight: 700;
   text-transform: uppercase;
@@ -465,7 +458,7 @@ form .button {
 }
 hr {
     border: none;
-    border-bottom: 4px solid green;
+    border-bottom: 4px solid #E7F2F6;
     width: 6rem;
     margin: 1.5rem 0;
 }
@@ -483,18 +476,13 @@ hr {
   line-height: 2rem;
 }
 
-.blog-button{
-  border: 2px solid grey;
-  padding: 0.5rem 2rem;
-  font-size: 1rem;
-}
 /*------------ Accordian slides ----- */
 
 .accordion dt a {
   padding: 0.25rem;
   margin: 0.25rem 0;
   display:block;
-  color: teal;
+  color: #595F79;
   position: relative;
   text-decoration: none;
 }

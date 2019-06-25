@@ -1,8 +1,6 @@
 ---
 layout: default
 title: RegenerativeMedicine
-banner-title: Regenerative Medicine
-banner-subtitle: Combat Aging. Naturally.
 treatment:
   - icon: fas fa-user-md
     name: Autoimmune
@@ -25,6 +23,18 @@ faq:
       - text: The use of this embryonic tissue was extremely controversial. The ethical concerns raised by the use of unborn or unwanted embryos for research or treatment received so much publicity that many people associate ethical suspicions with all stem cell research. However, embryonic stem cells are not widely used in treatment or research anymore.
       - text: Dr. Lekkos uses “adult stem cells,” meaning stem cells that remain present in a live-born human being of any age. Such cells can be extracted and deployed back into the body without danger to the patient. With an boost from technology, the patient’s own natural healing and reparative properties are enhanced by these cells.
       - text: Modern tools allow Dr. Lekkos to separate large numbers of stem cells from fat. These prolific stem cell reserves show the most promise for stem cell therapy as a non-invasive, affordable outpatient procedure to treat a wide variety of conditions resulting from disease or serious injury.
+  - question: Cold storage of stem cells?
+    answer:
+      - text: Adipose-derived stem cells can be cryo-preserved in cold storage at the time of harvesting. Cryopreservation of stem cells is a joint project between Cells On Ice™ and American CryoStem. Either the complete fat sample, or just the Stromal Vascular Fraction (SVF - the tiny fraction of a fat sample that contains vast quantities of stem cells) can be frozen.
+      - text: Choosing cold-storage for a portion of their fat or SVF specimen would allow patients to have a steady supply of their own stem cells on hand to treat anything from heart attack, stroke, serious accident, possibly even some cancers.
+      - text: Certain neurodegenerative and autoimmune conditions require multiple treatments. Preservation through Cells On Ice™ makes these multiple deployments easy and cost-effective.
+  - question: About regenerative medicine?
+    answer:
+      - text: Regenerative medicine is the process of replacing damaged or defective tissue with functioning, living replacement tissue to restore organ functions lost due to damage or disease.
+      - text: Traditionally, this involved stopping disease and helping the body repair itself, through medication and hormone therapy. Genetic research has also allowed doctors to treat degenerative diseases caused by gene defects.
+      - text: Adult Mesenchymal stem cells hold great promise in regenerative medicine. Studies suggest the ability of such cells - the patient’s own tissue - to stimulate a natural repair process in previously irreparable organs, allowing them to heal themselves.
+      - text: Stem cells use complex molecules called cytokines, or “growth factors,” to communicate with tissues and each other. Thousands of growth factors are currently used for therapeutic and cosmetic purposes, some with FDA approval.
+      - text: The science of combining stem cells and growth factors in treatment of degenerative diseases represents a promising frontier in regenerative medicine.
 ---
 <!-- This is the double column text section -->
 <section class="grid-center">
@@ -54,7 +64,7 @@ faq:
 </section>
 <!-- This is the icon section -->
 <section class="grid center bg-feat">
-  <h2 class="col-12 center">
+  <h2 class="col-12 center title">
     Areas of Treatment
   </h2>
   <p>
@@ -75,7 +85,7 @@ faq:
 </section>
 <!-- This is the quote section -->
 <section class=" grid-center quote">
-  <h2 class=" center">
+  <h2 class=" center title">
     Our bodies have the
     <br>
     potential to heal themselves.
@@ -99,7 +109,7 @@ faq:
     {% for item in page.faq %}
         <dt>
           <a href="">
-            {{item.question}} 
+            {{item.question}}
           </a>
         </dt>
         <dd>

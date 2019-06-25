@@ -34,13 +34,13 @@ img{
   max-width:60%;
 }
 
-.bg-light { background-color: rgb(230,230,235); }
+.bg-light: { #E7F2F6 }
 .bg-dark {
   background-color: rgb(60,60,65);
   color: white;
 }
 .bg-white{ background-color:#fff;}
-.bg-feat{ background-color: #F4F4F1;}
+.bg-feat{ background-color: #E7F2F6;}
 
 /* * {
   border: 1px solid grey;
@@ -113,7 +113,7 @@ p {
 }
 /* ---- banners---- */
 [class*=banner]{
-background-image: url('/images/leaf.jpg');
+background-image: url('https://images.unsplash.com/photo-1515511856280-7b23f68d2996?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80');
 min-height: 30vh;
 background-size: cover;
 background-position: center;
@@ -124,8 +124,7 @@ background-position: center;
   background-image: url('/images/leaf.jpg');
   background-size: cover;
   min-height:95vh;
-  background-position: 0% 95%;
-}
+  background-position: 0% 95%;}
 
 .bg-image {
   background-size: cover;
@@ -141,7 +140,7 @@ background-position: center;
 }
 
 .banner-Testimonials{
-  background-image: url('https://images.unsplash.com/photo-1501854739534-11fcce849abf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-image: url('https://images.unsplash.com/photo-1485628390555-1a7bd503f9fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
 }
 
 .banner-Blog{
@@ -152,7 +151,7 @@ background-position: center;
   background-image: url('https://static1.squarespace.com/static/582015556b8f5b2e555c41a6/t/5900d03ad1758eb456100409/1493225536448/?format=2500w')
 }
 .banner-RegenerativeMedicine{
-  background-image: url('https://images.unsplash.com/photo-1479981280584-037818c1297d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-image: url('https://images.unsplash.com/photo-1491183672482-d0af0e44929d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
   background-position: bottom;
 }
 .banner-Post{

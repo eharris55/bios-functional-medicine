@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Regenerative Medicine
+title: RegenerativeMedicine
 banner-title: Regenerative Medicine
 banner-subtitle: Combat Aging. Naturally.
 treatment:
@@ -17,6 +17,7 @@ treatment:
   - icon: fas fa-heart
     name: Sexual Health
 ---
+<!-- This is the double column text section -->
 <section class="grid-center">
 <div class="col-4_sm-12 padded padding-top-none">
   <h2>
@@ -31,14 +32,18 @@ treatment:
     Why Stem Cells?
   </h5>
   <p>
-    Eliminates the need for surgery<br>
-    Faster recovery<br>
-    Minimally invasive<br>
-    Promotes natural tissue healing and repair<br>
+    <ul class="list">
+      <li>Eliminates the need for surgery</li>
+      <li>Faster recovery</li>
+      <li>Minimally invasive</li>
+      <li>Promotes natural tissue healing and repair</li>
+    </ul>
+    <p>
     Offers significant improvements for autoimmune diseases, orthopedics, hair loss, head injuries, neurology, male enhancement, skin and other degenerative conditions
     </p>
 </div>
 </section>
+<!-- This is the icon section -->
 <section class="grid center bg-feat">
   <h2 class="col-12 center">
     Areas of Treatment
@@ -47,10 +52,10 @@ treatment:
     This is a partial list and every patient and condition is unique. Contact us to find out if stem cell therapy could be right for you.
   </p>
   {% for item in page.treatment %}
-  <div class="col-4_sm-12 padded-1-middle center" >
-    <i class="{{ item.icon }}">
+  <div class="col-4_sm-12 padded-2 center offers" >
+    <i class="{{ item.icon }} icon padded">
     </i>
-    <h4 class= "offers ">
+    <h4>
       {{ item.name }}
     </h4>
     <a href="{{ item.button-link }}">
@@ -59,21 +64,25 @@ treatment:
   </div>
   {% endfor %}
 </section>
-<section class=" grid-center padded">
-  <h2>
-    Our bodies have the potential to heal themselves.
+<!-- This is the quote section -->
+<section class=" grid-center padded quote">
+  <h2 class=" center">
+    Our bodies have the <br> potential to heal themselves.
   </h2>
   <h5>
     Regenerative Medicine explores how to activate these built-in mechanisms for self-repair and cellular regeneration and turn back the clock, naturally.
   </h5>
-  <p>
+  <p class="center padding-2">
     Board certified in Anti-Aging, Regenerative and Functional Medicine, an Emergency Medical Doctor and an active member of the Cell Surgical Network, Dr. Aposotolos Lekkos uses state-of-the-art stem cell therapy combined with other regenerative and functional medicine techniques to help patients get better faster, age gracefully, avoid invasive surgery and move toward a life of vitality.
   </p>
 </section>
+<!-- This is the graphic section -->
 <section class="center">
   <img src="/images/graphic.jpg">
 </section>
+<!-- This is the FAQ section -->
 <section>
   <<>>
 </section>
+<!-- This is the newsletter section -->
 {% include newsletter.html %}

@@ -26,9 +26,13 @@ padding: 0;
 
 .padded     { padding: 5%;  }
 .padded-1   { padding: 1rem; }
+.padded-2   { padding: 2rem; }
 .no-padding { padding: 0;   }
-.bottom-padded{ padding-bottom: 12rem;}
 .padding-top-none{ padding-top: 0;}
+section {
+  max-width: 990px;
+  margin: 0 auto;
+}
 
 img{
   max-width:60%;
@@ -95,14 +99,22 @@ h1,h2,h3,h4,h5,h6 {
 h1 {  font-size: 2.5rem; }
 h2 {  font-size: 2.3rem; }
 h3 {  font-size: 2.2rem; }
-h4 {  font-size: 2.1rem; }
+h4 {  font-size: 1.2rem; }
 h5 {  font-size: 1.9rem; }
 h6 {  font-size: 1.7rem; }
+
+
+.list{
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 1.5rem 0;
+  margin-left: 1.5rem;
+}
 
 p {
   font-size: 1rem;
   line-height: 2rem;
-  margin: 1.5rem 0;
+  margin: 0 0 1.5rem;
 }
 /* ---- banners---- */
 [class*=banner]{
@@ -139,8 +151,9 @@ background-position: center;
 .banner-About{
   background-image: url('https://static1.squarespace.com/static/582015556b8f5b2e555c41a6/t/5900d03ad1758eb456100409/1493225536448/?format=2500w')
 }
-.banner-Regenerative-medicine{
-  background-image: url('https://static1.squarespace.com/static/582015556b8f5b2e555c41a6/t/5900d03ad1758eb456100409/1493225536448/?format=2500w')
+.banner-RegenerativeMedicine{
+  background-image: url('https://images.unsplash.com/photo-1479981280584-037818c1297d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-position: bottom;
 }
 
 /* ---------------- banners nav color --------------- */
@@ -155,6 +168,10 @@ background-position: center;
 }
 
 .banner-Contact .header-nav{
+  color:#666666;
+}
+
+.banner-RegenerativeMedicine .header-nav{
   color:#666666;
 }
 
@@ -174,15 +191,23 @@ background-position: center;
 
 }
 
-.offers{
-  min-height:5rem;
-}
 .quote-img{
   /* background-image: url('https://images.unsplash.com/photo-1559917779-96274069ce18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1610&q=80'); */
   background-color: #DBE7BF;
   min-height: 20vh;
   background-size: cover;
   background-position: bottom;
+}
+
+.quote h2{
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+.quote h5{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
 }
 .logo-grid{
   padding-right: 1rem;
@@ -218,6 +243,9 @@ nav a{
 .icon-details{
    padding:0;
    margin:0;
+}
+.icon{
+  font-size: 3rem;
 }
 
 /* burger menu */
@@ -284,17 +312,18 @@ nav a{
     display: flex;
     position: fixed;
     top: -100vh;
-    left:60%;
+    left: 60%;
     right: 0;
-    /* bottom: auto; */
+    bottom: 100vh;
     background-color: #f9f9f9;
-    padding:5px;
+    padding: 5px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 8;
-  transition:1s;
-    align-content:space-around;
-  justify-content:space-around;
-  flex-direction:column;
+    transition: 1s;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: column;
+    overflow: hidden;
 }
 .burger-menu.active{
   top:0;
@@ -358,8 +387,25 @@ form .button {
 .top-logo{
   display:inline-block;
   max-width: 20%;
-
 }
+.offers a{
+  font-size: 1rem;
+  border-radius: 4px;
+  padding:.3rem;
+  display:inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  background-color:#fff;
+  color:#818181;
+}
+.offers h4{
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  margin-bottom: 1rem;
+}
+
 /* ---------testimonials --------*/
 .test-p{
   font-size: 1rem;
@@ -367,6 +413,31 @@ form .button {
 .test-title{
   font-size: 1.2rem;
   line-height: 2rem;
+}
+.testimonials h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight:600;
+  line-height: 3rem;
+}
+.testimonials .stories{
+  font-size: 1.5rem;
+  font-weight:400;
+  line-height: 3rem;
+}
+/*---------- quotes ------------*/
+.quote h2{
+  ont-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight:600;
+  line-height: 3rem;
+}
+.quote h5{
+  font-size: 1rem;
+  font-weight:500;
+  line-height: 3rem;
 }
 /*---------- Blog ------------*/
 .post-img{

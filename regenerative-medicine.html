@@ -1,0 +1,79 @@
+---
+layout: default
+title: Regenerative Medicine
+banner-title: Regenerative Medicine
+banner-subtitle: Combat Aging. Naturally.
+treatment:
+  - icon: fas fa-user-md
+    name: Autoimmune
+  - icon: fas fa-running
+    name: Orthopedic
+  - icon: fas fa-user-alt
+    name: Hair and Skin
+  - icon: fas fa-brain
+    name: Neurology
+  - icon: fas fa-hourglass-half
+    name: Degenerative Conditions
+  - icon: fas fa-heart
+    name: Sexual Health
+---
+<section class="grid-center">
+<div class="col-4_sm-12 padded padding-top-none">
+  <h2>
+    Harness the Power of Stem Cells
+  </h2>
+</div>
+<div class="col-8_sm-12 padded padding-top-none">
+  <p>
+    Stem cells are non-specific cells that have the ability to replenish and repair damaged tissue. While most conventional treatment strategies for degenerative and inflammatory conditions involve invasive surgeries and drugs riddled with side-effects that serve to merely control symptoms, stem cell therapy offers a way of achieving longer-term tissue healing and repair. By using a cutting-edge technique to harvest autologous stem cells (from one's own body) and inserting the cells into the afflicted area, this healing modality can be used to regenerate damaged tissue, as the stem cells differentiate into whatever type of tissue is lacking. It’s a way of tapping into the body's natural repair system.
+  </p>
+  <h5>
+    Why Stem Cells?
+  </h5>
+  <p>
+    Eliminates the need for surgery<br>
+    Faster recovery<br>
+    Minimally invasive<br>
+    Promotes natural tissue healing and repair<br>
+    Offers significant improvements for autoimmune diseases, orthopedics, hair loss, head injuries, neurology, male enhancement, skin and other degenerative conditions
+    </p>
+</div>
+</section>
+<section class="grid center bg-feat">
+  <h2 class="col-12 center">
+    Areas of Treatment
+  </h2>
+  <p>
+    This is a partial list and every patient and condition is unique. Contact us to find out if stem cell therapy could be right for you.
+  </p>
+  {% for item in page.treatment %}
+  <div class="col-4_sm-12 padded-1-middle center" >
+    <i class="{{ item.icon }}">
+    </i>
+    <h4 class= "offers ">
+      {{ item.name }}
+    </h4>
+    <a href="{{ item.button-link }}">
+      Learn More
+      </a>
+  </div>
+  {% endfor %}
+</section>
+<section class=" grid-center padded">
+  <h2>
+    Our bodies have the potential to heal themselves.
+  </h2>
+  <h5>
+    Regenerative Medicine explores how to activate these built-in mechanisms for self-repair and cellular regeneration and turn back the clock, naturally.
+  </h5>
+  <p>
+    Board certified in Anti-Aging, Regenerative and Functional Medicine, an Emergency Medical Doctor and an active member of the Cell Surgical Network, Dr. Aposotolos Lekkos uses state-of-the-art stem cell therapy combined with other regenerative and functional medicine techniques to help patients get better faster, age gracefully, avoid invasive surgery and move toward a life of vitality.
+  </p>
+</section>
+<section class="center">
+  <img src="/images/graphic.jpg">
+</section>
+<section>
+  <<>>
+</section>
+{% include newsletter.html %}

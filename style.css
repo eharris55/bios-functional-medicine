@@ -27,11 +27,11 @@ padding: 0;
 .padded     { padding: 5%;  }
 .padded-1   { padding: 1rem; }
 .no-padding { padding: 0;   }
-.bottom-padded{ padding-bottom: 9rem;}
+.bottom-padded{ padding-bottom: 12rem;}
 .padding-top-none{ padding-top: 0;}
 
 img{
-  max-width:100%;
+  max-width:60%;
 
 }
 
@@ -100,7 +100,8 @@ h5 {  font-size: 1.9rem; }
 h6 {  font-size: 1.7rem; }
 
 p {
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 2rem;
   margin: 1.5rem 0;
 }
 /* ---- banners---- */
@@ -118,6 +119,7 @@ background-position: center;
   min-height:95vh;
   background-position: 0% 95%;
 }
+/* ---------------- banners images--------------- */
 .banner-Blog{
   background-image: url('https://images.unsplash.com/photo-1461773518188-b3e86f98242f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
 }
@@ -134,13 +136,37 @@ background-position: center;
   background-image: url('https://images.unsplash.com/photo-1461773518188-b3e86f98242f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
 }
 
+.banner-About{
+  background-image: url('https://static1.squarespace.com/static/582015556b8f5b2e555c41a6/t/5900d03ad1758eb456100409/1493225536448/?format=2500w')
+}
+.banner-Regenerative-medicine{
+  background-image: url('https://static1.squarespace.com/static/582015556b8f5b2e555c41a6/t/5900d03ad1758eb456100409/1493225536448/?format=2500w')
+}
+
+/* ---------------- banners nav color --------------- */
+.banner-Index .header-nav{
+
+}
+.banner-About .header-nav{
+  color: #666666;
+}
+.banner-Testimonials .header-nav{
+  color:#666666;
+}
+
+.banner-Contact .header-nav{
+  color:#666666;
+}
+
 .header-nav{
   position: absolute;
-  top: 1.5rem;
-  right: 2rem;
+  top: 3rem;
+  right: 3rem;
   color: white;
   font-weight:600;
-  font-size: 1rem;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .5px
 }
 
 .banner-about .header-nav{
@@ -175,7 +201,7 @@ background-position: center;
 
 }
 nav a{
-  padding-left: .7rem;
+  padding-left: 1.5rem;
 
 }
 .inline-icons i {
@@ -325,6 +351,15 @@ form .button {
   padding-top: 2%;
   color:#F4F4F1;
 }
+.headshot{
+  padding-right: 10%;
+  margin-top: 1.1rem;
+}
+.top-logo{
+  display:inline-block;
+  max-width: 20%;
+
+}
 /* ---------testimonials --------*/
 .test-p{
   font-size: 1rem;
@@ -335,8 +370,12 @@ form .button {
 }
 /*---------- Blog ------------*/
 .post-img{
-  max-width: 20rem;
   display: inline-block;
+}
+.span{
+  font-weight:300;
+  font-size: 1.8rem;
+  padding-top: 2rem;
 }
 
 @media(max-width:1024px){

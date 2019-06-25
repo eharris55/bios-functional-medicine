@@ -1,9 +1,15 @@
 
 <!-- This is the header banner  -->
-<header class="banner-{{page.title}} grid-center">
-  <nav class="grid header-nav tablet-hide">
+
+<header class="grid banner-{{page.title}}">
+    <div class="col-3 left">
+      <a href="/index">
+      <img src="/images/Lekkos-logo.png" class=".top-logo">
+      </a>
+    </div>
+  <nav class="col-8 header-nav tablet-hide">
     <a href="#"> Functional Practice </a>
-    <a href="#"> Regenerative Medicine </a>
+    <a href="/regenerative-medicine"> Regenerative Medicine </a>
     <a href="/about"> About </a>
     <a href="/testimonials"> Testimonials </a>
     <a href="/blog"> Blog </a>
@@ -30,11 +36,13 @@
      <a href="/contact"> Contact </a>
   </div>
 </nav>
-  <div class="col-10_sm-12-bottom padded center bottom-padded">
-    <h3> Anti-aging, Regenerative and Functional Medicine </h3>
-    <p> Helping you move beyond symptom management and into long-term health</p>
+  <div class="col-12_sm-12-bottom center padded bottom-padded">
+    <h3> {{ page.banner-title }} </h3>
+    <p> {{ page.banner-subtitle }}</p>
+    {% if page.url == "/" %}
     <a href="/contact" class= "button">
       Become a Patient
     </a>
+    {% endif %}
   </div>
 </header>

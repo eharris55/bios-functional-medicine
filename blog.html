@@ -1,15 +1,22 @@
 ---
+title: Blog
 layout: default
+banner-title: Our Blog
+banner-subtitle: Read more about an array of topics
 ---
 
 <section>
 {% for post in site.posts %}
-<div class=" blog-post ">
-  <img src="{{ post.feat-img }}" class=" post-img">
-  <a href="{{ post.url }}">
-    {{ post.title }}
-  </a>
-  <p> {{ post.excerpt }} </p>
+<a href="{{ post.url }}">
+  <div class="grid-middle-spaceAround blog-post ">
+    <div class="col-4_sm-12">
+      <img src="{{ post.feat-img }}" class=" post-img">
+    </div>
+    <div class="col-6_sm-12">
+        {{ post.title }}
+      <p> {{ post.excerpt }} </p>
+    </div>
   </div>
+</a>
 {% endfor %}
   </section>
